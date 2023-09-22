@@ -1,0 +1,6 @@
+services:
+  python3:
+    container_name: imgdedup
+    build: ./
+    volumes:
+      - ./output:/output
