@@ -20,6 +20,8 @@ $ ./docker-setup.sh
 
 ### Result:
 
-All the results will be found in the folder ./output/
+All the results will be found in the folder **./output/**
 
-- The deduplicated pictures are gonna be inside the folder named archivename*_dedup/archive_N* this system is designed to preserve and compare different outputs of the program on the same archive
+- The deduplicated pictures are gonna be inside the folder named *archivename_dedup/archive_N*
+
+This system is designed to preserve and compare different outputs of the program on the same archive
