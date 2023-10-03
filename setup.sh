@@ -17,7 +17,7 @@ DST="${1%.*}"
 
 if ! [ -d "$DST" ]
 then
-	try "type unzip 1>/dev/null 2>&1" "python3 not installed"
+	try "type unzip 1>/dev/null 2>&1" "unzip not installed"
 	try "unzip -q -j -d $DST $1" "unzip failed unzipping $1 into $DST"
 	try "chmod -R 777 $DST" "failed to set extracted folder permissions"
 
@@ -32,3 +32,5 @@ try 'python3 -m pip install -q imagededup' 'imgdedup failed installation'
 try "./dedup.py $DST" 'failed to execute dedup.py'
 
 try "rm -rf $DST" "Failed removing unzipped folder from output"
+
+exit 0
